@@ -1,0 +1,33 @@
+.Home__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.Products {
+  border: none;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+}
+
+.Products__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.Products__name {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.Products__type {
+  color: #777;
+  font-size: 0.9rem;
+}

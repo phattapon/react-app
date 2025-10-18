@@ -5,18 +5,16 @@ export default function Product({ item }) {
   let imageSrc;
 
   try {
-    // ดึงภาพจากโฟลเดอร์ assets
     imageSrc = require(`../../assets/${item.imageURL}`);
   } catch (err) {
-    // fallback ถ้าไม่มีไฟล์
-    imageSrc = "https://picsum.photos/300/200";
+    imageSrc = "https://picsum.photos/300/200"; // fallback
   }
 
   return (
     <li className="Products">
       <img className="Products__image" src={imageSrc} alt={item.name} />
       <h3 className="Products__name">{item.name}</h3>
-      <p className="Products__type">Type: {item.type}</p>
+      <p className="Products__type">{item.type}</p>
     </li>
   );
 }
